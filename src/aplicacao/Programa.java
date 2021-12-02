@@ -51,6 +51,8 @@ public class Programa {
 			
 			ItemPedido ip = new ItemPedido(quantidade, produtoPreco, produto);
 		
+			pedido.addItem(ip);
+		
 		
 		
 		sc.close();
