@@ -6,6 +6,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import entidades.Cliente;
+import entidades.Produto;
 import entidades.enums.EstadoPedido;
 
 public class Programa {
@@ -42,6 +43,7 @@ public class Programa {
 			double produtoPreco = sc.nextDouble();
 			System.out.print("Quantidade: ");
 			int quantidade = sc.nextInt();
+			Produto produto = new Produto(produtoNome, produtoPreco);
 		
 		
 		
