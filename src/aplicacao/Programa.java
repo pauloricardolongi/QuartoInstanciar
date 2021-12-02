@@ -31,6 +31,18 @@ public class Programa {
 		System.out.print("Estado: ");
 		EstadoPedido estado = EstadoPedido.valueOf(sc.next());
 		
+		System.out.print("Quantos itens o pedido vai ter? ");
+		int N = sc.nextInt();
+		for (int i=1; i<=N; i++) {
+			System.out.println("Entre com o item número #" + i );
+			System.out.print("Nome do Produto: ");
+			sc.nextLine();
+			String produtoNome = sc.nextLine();
+			System.out.print("Preço do Produto: ");
+			double produtoPreco = sc.nextDouble();
+			System.out.print("Quantidade: ");
+			int quantidade = sc.nextInt();
+		
 		
 		
 		sc.close();
