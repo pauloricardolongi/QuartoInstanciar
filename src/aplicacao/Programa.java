@@ -53,12 +53,9 @@ public class Programa {
 		
 			pedido.addItem(ip);
 		
-		
-		
-		sc.close();
-		
-		
-
 	}
+		System.out.println();
+		System.out.println(pedido);
+		sc.close();
 
 }
