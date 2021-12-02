@@ -6,6 +6,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import entidades.Cliente;
+import entidades.ItemPedido;
 import entidades.Produto;
 import entidades.enums.EstadoPedido;
 
@@ -44,6 +45,8 @@ public class Programa {
 			System.out.print("Quantidade: ");
 			int quantidade = sc.nextInt();
 			Produto produto = new Produto(produtoNome, produtoPreco);
+			
+			ItemPedido ip = new ItemPedido(quantidade, produtoPreco, produto);
 		
 		
 		
