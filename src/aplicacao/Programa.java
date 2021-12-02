@@ -6,13 +6,13 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import entidades.Cliente;
+import entidades.enums.EstadoPedido;
 
 public class Programa {
 
 	public static void main(String[] args) thows ParseException{
 		
-		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-		
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");		
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
@@ -25,6 +25,12 @@ public class Programa {
 		System.out.print("data Nascimento (DD/MM/YYYY): ");
 		Date dataNascimento = sdf.parse(sc.next());
 		Cliente cliente = new Cliente(nome, email, dataNascimento);
+		
+		
+		System.out.println("Entre com Status do Pedido:");
+		System.out.print("Estado: ");
+		EstadoPedido estado = EstadoPedido.valueOf(sc.next());
+		
 		
 		
 		sc.close();
