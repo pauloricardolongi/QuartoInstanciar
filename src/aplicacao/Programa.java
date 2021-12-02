@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 import entidades.Cliente;
 import entidades.ItemPedido;
+import entidades.Pedido;
 import entidades.Produto;
 import entidades.enums.EstadoPedido;
 
@@ -33,6 +34,8 @@ public class Programa {
 		System.out.print("Estado: ");
 		EstadoPedido estado = EstadoPedido.valueOf(sc.next());
 		
+		
+		Pedido pedido = new Pedido(new Date(), estado, cliente);		
 		System.out.print("Quantos itens o pedido vai ter? ");
 		int N = sc.nextInt();
 		for (int i=1; i<=N; i++) {
